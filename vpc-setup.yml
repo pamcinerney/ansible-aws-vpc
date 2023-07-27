@@ -4,7 +4,7 @@
   tasks:
     - name: Import Variables
       inlcude_vars: 
-        file: vars/vpc_setup.yml
+        file: vpc_setup.yml
 
     - name: Create vprofile VPC
       ec2_vpc_net:
