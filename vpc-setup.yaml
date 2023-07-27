@@ -97,7 +97,7 @@
           Name: vrofile-IGW
       register: igw_out
 
-    - name: Public Subnet ROute Table Setup
+    - name: Public Subnet Route Table Setup
       ec2_vpc_route_table:
         vpc_id: "{{vpcout.vpc.id}}"
         region: "{{region}}"
