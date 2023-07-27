@@ -3,7 +3,8 @@
   gather_facts: False
   tasks:
     - name: Import Variables
-      inlcude_vars: vars/vpc_setup
+      inlcude_vars: 
+        file: vars/vpc_setup.yml
 
     - name: Create vprofile VPC
       ec2_vpc_net:
