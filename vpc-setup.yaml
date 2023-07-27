@@ -96,3 +96,18 @@
         resource_tags:
           Name: vrofile-IGW
       register: igw_out
+
+    - name: Public Subnet ROute Table Setup
+      ec2_vpc_route_table:
+        vpc_id: "{{vpcout.vpc.id}}"
+        region: "{{region}}"
+        tags:
+          Name: Vprofile-PubRT
+        subnets:
+          - "{{pubsub1_out.id}}"
+          - "{{pubsub2_out.id}}"
+          - "{{pubsub3_out.id}}"
+        routes:
+          - dest: 0.0.0.0/0
+            gateway_id: "{{igw_out.gateway_id}}"
+      resgister: pubRT_out
