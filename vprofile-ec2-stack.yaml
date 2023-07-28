@@ -47,11 +47,12 @@
         - proto: tcp
           from_port: 80
           to_port: 80
-          cidr_ip: "{{vproELBSG_out.group_id}}"
+          group_id: "{{vproELBSG_out.group_id}}"
+
         - proto: tcp
           from_port: 22
           to_port: 22
-          cidr_ip: "{{BastionSGid}}"
+          group_id: "{{BastionSGid}}"
       register: vproStackSG_out
 
     - name: Update security group with its own id
