@@ -52,8 +52,3 @@
           Name: "Bastion_host"
           Project: Vprofile
         group_id: "{{BastionSG_out.group_id}}"
-<<<<<<< HEAD
-      register: bastionHost_out
-=======
-      register: bastionHost_out
->>>>>>> 83e966361f5b289f8bec2fc8fcaa6aa139274b38
