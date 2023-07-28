@@ -52,3 +52,4 @@
           Name: "Bastion_host"
           Project: Vprofile
         group_id: "{{BastionSG_out.group_id}}"
+      resgister: bastionHost_out
