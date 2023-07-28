@@ -28,7 +28,7 @@
         name: bastion-host-sg
         description: SSH from anywhere
         region: "{{region}}"
-        vcp_id: "{{vpcid}}"
+        vpc_id: "{{vpcid}}"
         rules:
           - proto: tcp
             from_port: 22
