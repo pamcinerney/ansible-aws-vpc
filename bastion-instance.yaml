@@ -5,7 +5,7 @@
   gather_facts: no
   tasks:
     - name: Import VPC variables
-      include_vars: vars/bastion_setup.yaml
+      include_vars: vars/vpc_setup.yaml
 
     - name: Import VPC variables
       include_vars: vars/output_vars
