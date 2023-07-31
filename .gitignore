@@ -1,2 +1,3 @@
-loginkey_vpro.pem
-provision-stack/loginkey_vpro.pem
+*.pem
+*.sql
+*.var
