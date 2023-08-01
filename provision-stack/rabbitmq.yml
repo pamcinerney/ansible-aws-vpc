@@ -24,6 +24,21 @@
       tags:
         - package
 
+    - name: Upgrade Erlang to version 24.3
+      apt:
+        name: erlang
+        state: latest
+        update_cache: yes
+      tags:
+        - package
+
+    - name: Install unixODBC
+      yum:
+        name: unixODBC
+        state: present
+        tags:
+          - package
+
     - name: Add an apt sigigning key
       apt_key:
         url: https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc
