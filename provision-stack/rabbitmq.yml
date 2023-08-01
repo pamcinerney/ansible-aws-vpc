@@ -36,8 +36,8 @@
       apt:
         name: unixODBC
         state: present
-        tags:
-          - package
+      tags:
+        - package
 
     - name: Add an apt sigigning key
       apt_key:
