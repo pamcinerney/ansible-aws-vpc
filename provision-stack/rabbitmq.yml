@@ -31,7 +31,7 @@
       tags:
         - package
 
-    - apt_reposititory:
+    - apt_repository:
         repo: deb https://dl.bintray.com/rabbitmq/debian bionic main
         state: present
       tags:
